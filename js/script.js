@@ -14,10 +14,6 @@ new Vue({
       for (let i = 0; i < 10; i++) {
         axios.get(this.apiUrl).then((ajaxResponse) => {
           this.userEmail.push(ajaxResponse.data.response) 
-          if(this.userEmail.length >= 10){
-            console.log(this.userEmail)
-              
-          }
         })
       }
     }
